@@ -1,15 +1,24 @@
-# sqlql_sample_v2
+# README
 
-Rails 8 rewrite of legacy `sqlql/sqlql_sample`.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Status
-- bootstrap repository created
-- architecture and migration plan pending
+Things you may want to cover:
 
-## Goals
-- modern Rails 8 baseline
-- secure dependency posture with Dependabot + CI
-- minimal reproducible sample for sqlql
+* Ruby version
 
-## Legacy note
-Legacy repo: https://github.com/sqlql/sqlql_sample (deprecated/archived)
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

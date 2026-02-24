@@ -16,7 +16,7 @@ module HauteCouture
 
   def check_sql(query)
     pg_query = PgQuery.parse(query)
-    raise "multiple statements are not allowed" if pg_query.tree.count > 1
-    raise "DROP is not allowed" if pg_query.tree.any? { |n| !n.dig("RawStmt", "stmt", "DropStmt").nil? }
+    raise "multiple statements are not allowed" if pg_query.tree.stmts.count > 1
+    raise "DROP is not allowed" if pg_query.tree.stmts.any? { |n| n.stmt.node == :drop_stmt }
   end
 end
